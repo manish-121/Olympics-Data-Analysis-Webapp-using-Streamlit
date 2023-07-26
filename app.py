@@ -7,7 +7,7 @@ import seaborn as sns
 import plotly.figure_factory as ff
 
 df = pd.read_excel(r'athlete_events.xlsx')
-region_df = pd.read_excel(r'noc_regions.xlsx')
+region_df = pd.read_csv(r'noc_regions.csv')
 
 df = preprocessor.preprocess(df,region_df)
 
